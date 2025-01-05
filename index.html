@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carte Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 id="header-title">Bâtiment Sport</h1>
+        <button id="language-toggle" onclick="toggleLanguage()">FR / EN</button>
+    </header>
+
+    <button onclick="showImage('image2')">Plan Rez-de-Chaussée</button>
+    <button onclick="showImage('image3')">Plan Palier 1</button>
+
+    <!-- Plan Rez-de-Chaussée -->
+    <div id="image2" class="image-container" style="display:none;">
+        <img src="/CARTE INTERACTIVE/IMAGE/image RDC.png" usemap="#image-map-2">
+        <map name="image-map-2">
+            <area target="" alt="Gymnase" title="Gymnase" href="https://www.google.com" coords="15,21,480,22,479,294,15,298" shape="poly" class="interactive-area" data-name="Gymnase">
+            <area target="" alt="Piscine" title="Piscine" href="https://www.google.com" coords="481,134,896,133,897,296,479,296" shape="poly" class="interactive-area" data-name="Piscine">
+            <area target="" alt="Vestiaire 1" title="Vestiaire 1" href="https://www.google.com" coords="131,298,501,297,498,408,132,371" shape="poly" class="interactive-area" data-name="Vestiaire 1">
+            <area target="" alt="Local Technique" title="Local Technique" href="https://www.google.com" coords="819,298,890,298,891,351,821,352" shape="poly" class="interactive-area" data-name="Local Technique">
+            <area target="" alt="Vestiaire 2" title="Vestiaire 2" href="https://www.google.com" coords="482,24,895,24,896,133,481,131" shape="poly" class="interactive-area" data-name="Vestiaire 2">
+            <area target="" alt="Entrée" title="Entrée" href="https://www.google.com" coords="12,298,131,299,133,369,15,360" shape="poly" class="interactive-area" data-name="Entrée">
+        </map>
+        <div id="highlight-box" class="highlight-box"></div>
+        <p id="zone-name" class="zone-name"></p> 
+    </div>
+
+    <!-- Plan Palier 1 -->
+    <div id="image3" class="image-container" style="display:none;">
+        <img src="/CARTE INTERACTIVE/IMAGE/image P1.png" usemap="#image-map-3">
+        <map name="image-map-3">
+            <area target="" alt="Gymnase" title="Gymnase" href="https://www.google.com" coords="13,12,446,15,446,280,13,279" shape="poly" class="interactive-area" data-name="Gymnase">
+            <area target="" alt="Salle de Spectacle" title="Salle de Spectacle" href="https://www.youtube.com" coords="448,17,832,15,831,275,447,280" shape="poly" class="interactive-area" data-name="Salle de Spectacle">
+            <area target="" alt="Régie" title="Régie" href="https://www.facebook.com" coords="831,108,873,108,873,201,831,200" shape="poly" class="interactive-area" data-name="Régie">
+        </map>
+        <div id="highlight-box" class="highlight-box"></div>
+        <p id="zone-name" class="zone-name"></p> 
+    </div>
+
+</body>
+</html>
