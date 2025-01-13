@@ -15,34 +15,41 @@
         <button id="language-toggle" onclick="toggleLanguage()">FR / EN</button>
     </header>
 
-    <button onclick="showImage('image2')">Plan Rez-de-Chaussée</button>
-    <button onclick="showImage('image3')">Plan Palier 1</button>
+    <button id="button1" onclick="showImage('image2')">Plan Rez-de-Chaussée</button>
+    <button id="button2" onclick="showImage('image3')">Plan Palier 1</button>
 
     <!-- Plan Rez-de-Chaussée -->
     <div id="image2" class="image-container" style="display:none;">
         <img src="IMAGE/image RDC.png" usemap="#image-map-2">
         <map name="image-map-2">
-            <area target="" alt="Gymnase" title="Gymnase" href="https://www.google.com" coords="15,21,480,22,479,294,15,298" shape="poly" class="interactive-area" data-name="Gymnase">
-            <area target="" alt="Piscine" title="Piscine" href="https://www.google.com" coords="481,134,896,133,897,296,479,296" shape="poly" class="interactive-area" data-name="Piscine">
-            <area target="" alt="Vestiaire 1" title="Vestiaire 1" href="https://www.google.com" coords="131,298,501,297,498,408,132,371" shape="poly" class="interactive-area" data-name="Vestiaire 1">
-            <area target="" alt="Local Technique" title="Local Technique" href="https://www.google.com" coords="819,298,890,298,891,351,821,352" shape="poly" class="interactive-area" data-name="Local Technique">
-            <area target="" alt="Vestiaire 2" title="Vestiaire 2" href="https://www.google.com" coords="482,24,895,24,896,133,481,131" shape="poly" class="interactive-area" data-name="Vestiaire 2">
-            <area target="" alt="Entrée" title="Entrée" href="https://www.google.com" coords="12,298,131,299,133,369,15,360" shape="poly" class="interactive-area" data-name="Entrée">
+            <area target="" alt="Gymnase" title="Gymnase" data-image="IMAGE/gymnase.jpg" data-description="Description du Gymnase" coords="15,21,480,22,479,294,15,298" shape="poly" class="interactive-area" data-name="Gymnase">
+            <area target="" alt="Piscine" title="Piscine" data-image="IMAGE/piscine.jpg" data-description="Description de la Piscine" coords="481,134,896,133,897,296,479,296" shape="poly" class="interactive-area" data-name="Piscine">
+            <area target="" alt="Vestiaire 1" title="Vestiaire 1" data-image="IMAGE/vestiaire1.jpg" data-description="Description du Vestiaire 1" coords="131,298,501,297,498,408,132,371" shape="poly" class="interactive-area" data-name="Vestiaire 1">
+            <area target="" alt="Local Technique" title="Local Technique" data-image="IMAGE/local_technique.jpg" data-description="Description du Local Technique" coords="819,298,890,298,891,351,821,352" shape="poly" class="interactive-area" data-name="Local Technique">
+            <area target="" alt="Vestiaire 2" title="Vestiaire 2" data-image="IMAGE/vestiaire2.jpg" data-description="Description du Vestiaire 2" coords="482,24,895,24,896,133,481,131" shape="poly" class="interactive-area" data-name="Vestiaire 2">
+            <area target="" alt="Entrée" title="Entrée" data-image="IMAGE/entree.jpg" data-description="Description de l'Entrée" coords="12,298,131,299,133,369,15,360" shape="poly" class="interactive-area" data-name="Entrée">
         </map>
-        <div id="highlight-box" class="highlight-box"></div>
-        <p id="zone-name" class="zone-name"></p> 
+        <p class="zone-name" id="zone-name-2"></p>
     </div>
 
     <!-- Plan Palier 1 -->
     <div id="image3" class="image-container" style="display:none;">
         <img src="IMAGE/image P1.png" usemap="#image-map-3">
         <map name="image-map-3">
-            <area target="" alt="Gymnase" title="Gymnase" href="https://www.google.com" coords="13,12,446,15,446,280,13,279" shape="poly" class="interactive-area" data-name="Gymnase">
-            <area target="" alt="Salle de Spectacle" title="Salle de Spectacle" href="https://www.youtube.com" coords="448,17,832,15,831,275,447,280" shape="poly" class="interactive-area" data-name="Salle de Spectacle">
-            <area target="" alt="Régie" title="Régie" href="https://www.facebook.com" coords="831,108,873,108,873,201,831,200" shape="poly" class="interactive-area" data-name="Régie">
+            <area target="" alt="Gymnase" title="Gymnase" data-image="IMAGE/gymnase.jpg" data-description="Description du Gymnase" coords="13,12,446,15,446,280,13,279" shape="poly" class="interactive-area" data-name="Gymnase">
+            <area target="" alt="Salle de Spectacle" title="Salle de Spectacle" data-image="IMAGE/salle_spectacle.jpg" data-description="Description de la Salle de Spectacle" coords="448,17,832,15,831,275,447,280" shape="poly" class="interactive-area" data-name="Salle de Spectacle">
+            <area target="" alt="Régie" title="Régie" data-image="IMAGE/regie.jpg" data-description="Description de la Régie" coords="831,108,873,108,873,201,831,200" shape="poly" class="interactive-area" data-name="Régie">
         </map>
-        <div id="highlight-box" class="highlight-box"></div>
-        <p id="zone-name" class="zone-name"></p> 
+        <p class="zone-name" id="zone-name-3"></p>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+        </div>
     </div>
 
 </body>
