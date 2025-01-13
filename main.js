@@ -15,14 +15,14 @@ const translations = {
             "Régie": "Régie"
         },
         zoneDescriptions: {
-            "Gymnase": "Description du Gymnase",
-            "Piscine": "Description de la Piscine",
-            "Vestiaire 1": "Description du Vestiaire 1",
-            "Local Technique": "Description du Local Technique",
-            "Vestiaire 2": "Description du Vestiaire 2",
-            "Entrée": "Description de l'Entrée",
-            "Salle de Spectacle": "Description de la Salle de Spectacle",
-            "Régie": "Description de la Régie"
+            "Gymnase": "Le gymnase est équipé pour accueillir divers sports tels que le basketball, le volleyball et le badminton.",
+            "Piscine": "La piscine est idéale pour la natation et les sports aquatiques. Elle est équipée de couloirs de nage, de plongeoirs et de vestiaires adjacents.",
+            "Vestiaire 1": "Le vestiaire 1 est équipé de casiers, de douches et de bancs pour se changer confortablement avant et après les activités sportives.",
+            "Local Technique": "Le local technique abrite les équipements nécessaires au bon fonctionnement du complexe sportif.",
+            "Vestiaire 2": "Le vestiaire 2 est similaire au vestiaire 1, offrant des casiers, des douches et des bancs pour les utilisateurs.",
+            "Entrée": "Il s'agit de l'entrée principale du bâtiment.",
+            "Salle de Spectacle": "La scène, est conçue pour accueillir différents événements. Elle dispose d'une scène, de sièges pour 750 spectateurs et d'un système de sonorisation et de lumière.",
+            "Régie": "La régie est la salle de contrôle où les techniciens gèrent l'éclairage, le son et les effets spéciaux pour les événements se déroulant dans la salle de spectacle. Elle est équipée de consoles de mixage, de panneaux de contrôle et de systèmes de communication."
         }
     },
     en: {
@@ -41,14 +41,14 @@ const translations = {
             "Régie": "Control Room"
         },
         zoneDescriptions: {
-            "Gymnase": "Gymnasium Description",
-            "Piscine": "Swimming Pool Description",
-            "Vestiaire 1": "Locker Room 1 Description",
-            "Local Technique": "Technical Room Description",
-            "Vestiaire 2": "Locker Room 2 Description",
-            "Entrée": "Entrance Description",
-            "Salle de Spectacle": "Auditorium Description",
-            "Régie": "Control Room Description"
+            "Gymnase": "The gymnasium is equipped to host various sports such as basketball, volleyball, and badminton.",
+            "Piscine": "The swimming pool is ideal for swimming and water sports. It is equipped with swimming lanes, diving boards, and adjacent locker rooms.",
+            "Vestiaire 1": "Locker Room 1 is equipped with lockers, showers, and benches for comfortably changing before and after sports activities.",
+            "Local Technique": "The technical room houses the equipment necessary for the proper functioning of the sports complex.",
+            "Vestiaire 2": "Locker Room 2 is similar to Locker Room 1, offering lockers, showers, and benches for users.",
+            "Entrée": "This is the main entrance of the building.",
+            "Salle de Spectacle": "The stage room is designed to host various events. It features a stage, seating for 750 spectators, and a sound and lighting system.",
+            "Régie": "The control room is where technicians manage lighting, sound, and special effects for events taking place in the auditorium. It is equipped with mixing consoles, control panels, and communication systems."
         }
     }
 };
@@ -82,28 +82,28 @@ function updateContent() {
 
 const zoneData = {
     "Gymnase": [
-        { image: "IMAGE/gymnase1.jpg", description: "Description du Gymnase 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "Le gymnase est équipé pour accueillir divers sports tels que le basketball, le volleyball et le badminton." },
     ],
     "Piscine": [
-        { image: "IMAGE/piscine1.jpg", description: "Description de la Piscine 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "La piscine est idéale pour la natation et les sports aquatiques. Elle est équipée de couloirs de nage, de plongeoirs et de vestiaires adjacents." },
     ],
     "Vestiaire 1": [
-        { image: "IMAGE/vestiaire1_1.jpg", description: "Description du Vestiaire 1 - 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "Le vestiaire 1 est équipé de casiers, de douches et de bancs pour se changer confortablement avant et après les activités sportives." },
     ],
     "Local Technique": [
-        { image: "IMAGE/local_technique1.jpg", description: "Description du Local Technique 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "Le local technique abrite les équipements nécessaires au bon fonctionnement du complexe sportif." },
     ],
     "Vestiaire 2": [
-        { image: "IMAGE/vestiaire2_1.jpg", description: "Description du Vestiaire 2 - 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "Le vestiaire 2 est similaire au vestiaire 1, offrant des casiers, des douches et des bancs pour les utilisateurs." },
     ],
     "Entrée": [
-        { image: "IMAGE/image P1.png", description: "Description de l'Entrée 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "Il s'agit de l'entrée principale du bâtiment." },
     ],
     "Salle de Spectacle": [
-        { image: "IMAGE/salle_spectacle1.jpg", description: "Description de la Salle de Spectacle 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "La scène, est conçue pour accueillir différents événements. Elle dispose d'une scène, de sièges pour 750 spectateurs et d'un système de sonorisation et de lumière." },
     ],
     "Régie": [
-        { image: "IMAGE/regie1.jpg", description: "Description de la Régie 1" },
+        { image: "IMAGE/Pas_Dispo.svg", description: "La régie est la salle de contrôle où les techniciens gèrent l'éclairage, le son et les effets spéciaux pour les événements se déroulant dans la salle de spectacle. Elle est équipée de consoles de mixage, de panneaux de contrôle et de systèmes de communication." },
     ]
 };
 
